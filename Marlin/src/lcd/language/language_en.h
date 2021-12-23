@@ -192,8 +192,8 @@ namespace Language_en {
   LSTR MSG_UBL_DEACTIVATE_MESH            = _UxGT("Deactivate UBL");
   LSTR MSG_UBL_SET_TEMP_BED               = _UxGT("Bed Temp");
   LSTR MSG_UBL_BED_TEMP_CUSTOM            = _UxGT("Bed Temp");
-  LSTR MSG_UBL_SET_TEMP_HOTEND            = _UxGT("Hotend Temp");
-  LSTR MSG_UBL_HOTEND_TEMP_CUSTOM         = _UxGT("Hotend Temp");
+  LSTR MSG_UBL_SET_TEMP_HOTEND            = _UxGT("Oven Temp");
+  LSTR MSG_UBL_HOTEND_TEMP_CUSTOM         = _UxGT("Oven Temp");
   LSTR MSG_UBL_MESH_EDIT                  = _UxGT("Mesh Edit");
   LSTR MSG_UBL_EDIT_CUSTOM_MESH           = _UxGT("Edit Custom Mesh");
   LSTR MSG_UBL_FINE_TUNE_MESH             = _UxGT("Fine Tuning Mesh");
@@ -208,7 +208,7 @@ namespace Language_en {
   LSTR MSG_UBL_VALIDATE_MESH_M            = _UxGT("Validate Mesh ($)");
   LSTR MSG_UBL_VALIDATE_CUSTOM_MESH       = _UxGT("Validate Custom Mesh");
   LSTR MSG_G26_HEATING_BED                = _UxGT("G26 Heating Bed");
-  LSTR MSG_G26_HEATING_NOZZLE             = _UxGT("G26 Heating Nozzle");
+  LSTR MSG_G26_HEATING_NOZZLE             = _UxGT("G26 Heating Oven");
   LSTR MSG_G26_MANUAL_PRIME               = _UxGT("Manual priming...");
   LSTR MSG_G26_FIXED_LENGTH               = _UxGT("Fixed Length Prime");
   LSTR MSG_G26_PRIME_DONE                 = _UxGT("Done Priming");
@@ -224,7 +224,7 @@ namespace Language_en {
   LSTR MSG_UBL_OUTPUT_MAP                 = _UxGT("Output Mesh Map");
   LSTR MSG_UBL_OUTPUT_MAP_HOST            = _UxGT("Output for Host");
   LSTR MSG_UBL_OUTPUT_MAP_CSV             = _UxGT("Output for CSV");
-  LSTR MSG_UBL_OUTPUT_MAP_BACKUP          = _UxGT("Off Printer Backup");
+  LSTR MSG_UBL_OUTPUT_MAP_BACKUP          = _UxGT("Off Oven Backup");
   LSTR MSG_UBL_INFO_UBL                   = _UxGT("Output UBL Info");
   LSTR MSG_UBL_FILLIN_AMOUNT              = _UxGT("Fill-in Amount");
   LSTR MSG_UBL_MANUAL_FILLIN              = _UxGT("Manual Fill-in");
@@ -287,7 +287,7 @@ namespace Language_en {
   LSTR MSG_MOVE_K                         = _UxGT("Move ") LCD_STR_K;
   LSTR MSG_MOVE_E                         = _UxGT("Move Extruder");
   LSTR MSG_MOVE_EN                        = _UxGT("Move E*");
-  LSTR MSG_HOTEND_TOO_COLD                = _UxGT("Hotend too cold");
+  LSTR MSG_HOTEND_TOO_COLD                = _UxGT("Oven too cold");
   LSTR MSG_MOVE_N_MM                      = _UxGT("Move %smm");
   LSTR MSG_MOVE_01MM                      = _UxGT("Move 0.1mm");
   LSTR MSG_MOVE_1MM                       = _UxGT("Move 1mm");
@@ -304,8 +304,8 @@ namespace Language_en {
   LSTR MSG_MAXSPEED_Z                     = _UxGT("Max ") LCD_STR_C _UxGT(" Speed");
   LSTR MSG_MAXSPEED_E                     = _UxGT("Max ") LCD_STR_E _UxGT(" Speed");
   LSTR MSG_BED_Z                          = _UxGT("Bed Z");
-  LSTR MSG_NOZZLE                         = _UxGT("Nozzle");
-  LSTR MSG_NOZZLE_N                       = _UxGT("Nozzle ~");
+  LSTR MSG_NOZZLE                         = _UxGT("Elememt");
+  LSTR MSG_NOZZLE_N                       = _UxGT("Elememt ~");
   LSTR MSG_NOZZLE_PARKED                  = _UxGT("Nozzle Parked");
   LSTR MSG_NOZZLE_STANDBY                 = _UxGT("Nozzle Standby");
   LSTR MSG_BED                            = _UxGT("Bed");
@@ -408,7 +408,7 @@ namespace Language_en {
   LSTR MSG_ERR_EEPROM_VERSION             = _UxGT("EEPROM Version Error");
   LSTR MSG_SETTINGS_STORED                = _UxGT("Settings Stored");
   LSTR MSG_MEDIA_UPDATE                   = MEDIA_TYPE_EN _UxGT(" Update");
-  LSTR MSG_RESET_PRINTER                  = _UxGT("Reset Printer");
+  LSTR MSG_RESET_PRINTER                  = _UxGT("Reset Oven");
   LSTR MSG_REFRESH                        = LCD_STR_REFRESH _UxGT("Refresh");
   LSTR MSG_INFO_SCREEN                    = _UxGT("Info Screen");
   LSTR MSG_PREPARE                        = _UxGT("Prepare");
@@ -417,11 +417,11 @@ namespace Language_en {
   LSTR MSG_CURRENT                        = _UxGT("Current");
   LSTR MSG_VOLTAGE                        = _UxGT("Voltage");
   LSTR MSG_POWER                          = _UxGT("Power");
-  LSTR MSG_START_PRINT                    = _UxGT("Start Print");
+  LSTR MSG_START_PRINT                    = _UxGT("Start Cycle");
   LSTR MSG_BUTTON_NEXT                    = _UxGT("Next");
   LSTR MSG_BUTTON_INIT                    = _UxGT("Init");
   LSTR MSG_BUTTON_STOP                    = _UxGT("Stop");
-  LSTR MSG_BUTTON_PRINT                   = _UxGT("Print");
+  LSTR MSG_BUTTON_PRINT                   = _UxGT("Start");
   LSTR MSG_BUTTON_RESET                   = _UxGT("Reset");
   LSTR MSG_BUTTON_IGNORE                  = _UxGT("Ignore");
   LSTR MSG_BUTTON_CANCEL                  = _UxGT("Cancel");
@@ -430,23 +430,23 @@ namespace Language_en {
   LSTR MSG_BUTTON_PROCEED                 = _UxGT("Proceed");
   LSTR MSG_BUTTON_SKIP                    = _UxGT("Skip");
   LSTR MSG_PAUSING                        = _UxGT("Pausing...");
-  LSTR MSG_PAUSE_PRINT                    = _UxGT("Pause Print");
-  LSTR MSG_RESUME_PRINT                   = _UxGT("Resume Print");
-  LSTR MSG_HOST_START_PRINT               = _UxGT("Start Host Print");
-  LSTR MSG_STOP_PRINT                     = _UxGT("Stop Print");
+  LSTR MSG_PAUSE_PRINT                    = _UxGT("Pause Cycle");
+  LSTR MSG_RESUME_PRINT                   = _UxGT("Resume Cycle");
+  LSTR MSG_HOST_START_PRINT               = _UxGT("Start Host Cycle");
+  LSTR MSG_STOP_PRINT                     = _UxGT("Stop Cycle");
   LSTR MSG_END_LOOPS                      = _UxGT("End Repeat Loops");
-  LSTR MSG_PRINTING_OBJECT                = _UxGT("Printing Object");
+  LSTR MSG_PRINTING_OBJECT                = _UxGT("Cycling Oven");
   LSTR MSG_CANCEL_OBJECT                  = _UxGT("Cancel Object");
   LSTR MSG_CANCEL_OBJECT_N                = _UxGT("Cancel Object =");
   LSTR MSG_OUTAGE_RECOVERY                = _UxGT("Power Outage");
-  LSTR MSG_MEDIA_MENU                     = _UxGT("Print from ") MEDIA_TYPE_EN;
+  LSTR MSG_MEDIA_MENU                     = _UxGT("Run from ") MEDIA_TYPE_EN;
   LSTR MSG_NO_MEDIA                       = _UxGT("No ") MEDIA_TYPE_EN;
   LSTR MSG_DWELL                          = _UxGT("Sleep...");
   LSTR MSG_USERWAIT                       = _UxGT("Click to Resume...");
-  LSTR MSG_PRINT_PAUSED                   = _UxGT("Print Paused");
-  LSTR MSG_PRINTING                       = _UxGT("Printing...");
-  LSTR MSG_PRINT_ABORTED                  = _UxGT("Print Aborted");
-  LSTR MSG_PRINT_DONE                     = _UxGT("Print Done");
+  LSTR MSG_PRINT_PAUSED                   = _UxGT("Oven Paused");
+  LSTR MSG_PRINTING                       = _UxGT("Cycling...");
+  LSTR MSG_PRINT_ABORTED                  = _UxGT("Cycle Aborted");
+  LSTR MSG_PRINT_DONE                     = _UxGT("Cycle Done");
   LSTR MSG_NO_MOVE                        = _UxGT("No Move.");
   LSTR MSG_KILLED                         = _UxGT("KILLED. ");
   LSTR MSG_STOPPED                        = _UxGT("STOPPED. ");
@@ -555,15 +555,15 @@ namespace Language_en {
   LSTR MSG_DELTA_DIAG_ROD                 = _UxGT("Diag Rod");
   LSTR MSG_DELTA_HEIGHT                   = _UxGT("Height");
   LSTR MSG_DELTA_RADIUS                   = _UxGT("Radius");
-  LSTR MSG_INFO_MENU                      = _UxGT("About Printer");
-  LSTR MSG_INFO_PRINTER_MENU              = _UxGT("Printer Info");
+  LSTR MSG_INFO_MENU                      = _UxGT("About Oven");
+  LSTR MSG_INFO_PRINTER_MENU              = _UxGT("Oven Info");
   LSTR MSG_3POINT_LEVELING                = _UxGT("3-Point Leveling");
   LSTR MSG_LINEAR_LEVELING                = _UxGT("Linear Leveling");
   LSTR MSG_BILINEAR_LEVELING              = _UxGT("Bilinear Leveling");
   LSTR MSG_UBL_LEVELING                   = _UxGT("Unified Bed Leveling");
   LSTR MSG_MESH_LEVELING                  = _UxGT("Mesh Leveling");
   LSTR MSG_MESH_DONE                      = _UxGT("Mesh probing done");
-  LSTR MSG_INFO_STATS_MENU                = _UxGT("Printer Stats");
+  LSTR MSG_INFO_STATS_MENU                = _UxGT("Oven Stats");
   LSTR MSG_INFO_BOARD_MENU                = _UxGT("Board Info");
   LSTR MSG_INFO_THERMISTOR_MENU           = _UxGT("Thermistors");
   LSTR MSG_INFO_EXTRUDERS                 = _UxGT("Extruders");
@@ -571,20 +571,20 @@ namespace Language_en {
   LSTR MSG_INFO_PROTOCOL                  = _UxGT("Protocol");
   LSTR MSG_INFO_RUNAWAY_OFF               = _UxGT("Runaway Watch: OFF");
   LSTR MSG_INFO_RUNAWAY_ON                = _UxGT("Runaway Watch: ON");
-  LSTR MSG_HOTEND_IDLE_TIMEOUT            = _UxGT("Hotend Idle Timeout");
+  LSTR MSG_HOTEND_IDLE_TIMEOUT            = _UxGT("Oven Idle Timeout");
 
   LSTR MSG_CASE_LIGHT                     = _UxGT("Case Light");
   LSTR MSG_CASE_LIGHT_BRIGHTNESS          = _UxGT("Light Brightness");
   LSTR MSG_KILL_EXPECTED_PRINTER          = _UxGT("INCORRECT PRINTER");
 
   #if LCD_WIDTH >= 20
-    LSTR MSG_INFO_PRINT_COUNT             = _UxGT("Print Count");
+    LSTR MSG_INFO_PRINT_COUNT             = _UxGT("Cycle Count");
     LSTR MSG_INFO_COMPLETED_PRINTS        = _UxGT("Completed");
-    LSTR MSG_INFO_PRINT_TIME              = _UxGT("Total Print Time");
+    LSTR MSG_INFO_PRINT_TIME              = _UxGT("Total Cycle Time");
     LSTR MSG_INFO_PRINT_LONGEST           = _UxGT("Longest Job Time");
     LSTR MSG_INFO_PRINT_FILAMENT          = _UxGT("Extruded Total");
   #else
-    LSTR MSG_INFO_PRINT_COUNT             = _UxGT("Prints");
+    LSTR MSG_INFO_PRINT_COUNT             = _UxGT("Cycles");
     LSTR MSG_INFO_COMPLETED_PRINTS        = _UxGT("Completed");
     LSTR MSG_INFO_PRINT_TIME              = _UxGT("Total");
     LSTR MSG_INFO_PRINT_LONGEST           = _UxGT("Longest");
@@ -683,7 +683,7 @@ namespace Language_en {
   //                        ...or up to 2 lines on a 3-line display
   //
   #if LCD_HEIGHT >= 4
-    LSTR MSG_ADVANCED_PAUSE_WAITING       = _UxGT(MSG_2_LINE("Press Button", "to resume print"));
+    LSTR MSG_ADVANCED_PAUSE_WAITING       = _UxGT(MSG_2_LINE("Press Button", "to resume cycle"));
     LSTR MSG_PAUSE_PRINT_PARKING          = _UxGT(MSG_1_LINE("Parking..."));
     LSTR MSG_FILAMENT_CHANGE_INIT         = _UxGT(MSG_3_LINE("Wait for", "filament change", "to start"));
     LSTR MSG_FILAMENT_CHANGE_INSERT       = _UxGT(MSG_3_LINE("Insert filament", "and press button", "to continue"));
@@ -693,7 +693,7 @@ namespace Language_en {
     LSTR MSG_FILAMENT_CHANGE_LOAD         = _UxGT(MSG_2_LINE("Wait for", "filament load"));
     LSTR MSG_FILAMENT_CHANGE_PURGE        = _UxGT(MSG_2_LINE("Wait for", "filament purge"));
     LSTR MSG_FILAMENT_CHANGE_CONT_PURGE   = _UxGT(MSG_2_LINE("Click to finish", "filament purge"));
-    LSTR MSG_FILAMENT_CHANGE_RESUME       = _UxGT(MSG_2_LINE("Wait for print", "to resume..."));
+    LSTR MSG_FILAMENT_CHANGE_RESUME       = _UxGT(MSG_2_LINE("Wait for cycle", "to resume..."));
   #else
     LSTR MSG_ADVANCED_PAUSE_WAITING       = _UxGT(MSG_1_LINE("Click to continue"));
     LSTR MSG_PAUSE_PRINT_PARKING          = _UxGT(MSG_1_LINE("Parking..."));

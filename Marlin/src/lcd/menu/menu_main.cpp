@@ -68,7 +68,7 @@
 
 void menu_tune();
 void menu_cancelobject();
-void menu_motion();
+//void menu_motion();  // Oven does not move!
 void menu_temperature();
 void menu_configuration();
 
@@ -308,7 +308,7 @@ void menu_main() {
       SUBMENU(MSG_PREHEAT_CUSTOM, menu_preheat_only);
     #endif
 
-    SUBMENU(MSG_MOTION, menu_motion);
+    //SUBMENU(MSG_MOTION, menu_motion);  //Oven does not move
   }
 
   #if HAS_CUTTER

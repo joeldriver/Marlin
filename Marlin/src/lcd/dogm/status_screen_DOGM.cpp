@@ -819,7 +819,7 @@ void MarlinUI::draw_status_screen() {
   //
   // XYZ Coordinates
   //
-
+/*  // Oven does not move
   #if EITHER(XYZ_NO_FRAME, XYZ_HOLLOW_FRAME)
     #define XYZ_FRAME_TOP 29
     #define XYZ_FRAME_HEIGHT INFO_FONT_ASCENT + 3
@@ -896,7 +896,7 @@ void MarlinUI::draw_status_screen() {
       #endif
     }
   }
-
+*/ //Oven does not move
   //
   // Feedrate
   //
